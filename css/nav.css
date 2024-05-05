@@ -1,0 +1,188 @@
+/******************** navbar start ********************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-blue: rgb(53, 208, 255);
+}
+
+.nav-container {
+  width: 100%;
+}
+header {
+  position: sticky;
+  width: 100%;
+  /* height: 6%; */
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  top: 0;
+  background: var(--bg-color1);
+  transition: 0.3s;
+  background-color: transparent;
+  /* box-shadow: -3px -4px 8px rgb(138, 138, 138), 2px 2px 5px black; */
+}
+
+.sub-navbar-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.411);
+  height: 100%;
+  box-shadow: 2px 2px 20px rgb(255, 255, 255);
+  color: white;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+}
+header a img {
+  width: 170px;
+}
+
+.sub-navbar-container .navbar-items {
+  display: flex;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+/* .menuclass i {
+  display: none;
+} */
+.sub-navbar-container .navbar-items a {
+  color: #fff;
+  border: 3px solid #00eaff;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    #00eaff 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(30deg, #00eaff73 50%, transparent 50%);
+  padding: 5px 50px;
+  border-radius: 10px;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  font-size: 27px;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+}
+
+.sub-navbar-container .navbar-items a:hover {
+  background-position: 100%;
+  color: #00eaff;
+}
+
+#menu-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+.dropdown-center {
+  border: 2px solid white;
+  border-radius: 6px;
+}
+.dropdownbtncls span {
+  color: white;
+}
+.dropdownbtncls {
+  background-color: transparent;
+  box-shadow: 2px 2px 20px black;
+}
+.dropdownbtncls span {
+  color: white;
+}
+.dropdown-menu li a {
+  text-align: center;
+}
+/******************** Navbar End ********************/
+
+.tooltips {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltips .tooltiptext {
+  visibility: hidden;
+  min-width: 80px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.615);
+  color: #ffffff;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  bottom: -120%;
+  font-size: 15px;
+  left: 0%;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltips .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent rgb(3, 188, 255) transparent;
+}
+
+.tooltips:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* responsive start  */
+
+@media screen and (max-width: 990px) {
+  .sub-navbar-container .navbar-items {
+    position: absolute;
+    /* left: 0; */
+    width: 100%;
+    top: -550px;
+    /* right: 0; */
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-color);
+    box-shadow: 0 4px 4px rgba(0 0 0/100%);
+    transition: 0.2s ease;
+    text-align: center;
+  }
+  .sub-navbar-container .navbar-items li {
+    margin: 10px 0;
+  }
+
+  #menu-icon {
+    display: initial;
+  }
+}
+@media screen and (max-width: 400px) {
+  header a{
+    padding: 12px 0;
+    /* margin: 30px 0; */
+  }
+  header a img {
+    width: 120px;
+  }
+}
+
+/* responsive end  */

@@ -1,0 +1,170 @@
+@media screen and (max-width: 980px) {
+  .box-form {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .box-form {
+    max-height: 60%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #friendsusers {
+    width: 100%;
+  }
+
+  #userdetailsdev {
+    width: 98%;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 35%;
+  }
+  .friendsusername {
+    font-size: 18px;
+    margin-top: 2px;
+  }
+  #friendsdata p {
+    margin-bottom: 0px;
+  }
+  #userprofilediv {
+    width: 80%;
+  }
+  .createpost-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sub-createpost-container {
+    width: 100%;
+    height: 70%;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .box-form {
+    max-height: 90%;
+    height: auto;
+  }
+  #createuserpost {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 560px) {
+  .uploadingcontent #imageforpost {
+    font-size: 20px;
+  }
+  .createpost-container img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 515px) {
+  .box-form {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box-form .left {
+    width: 100%;
+    height: 50%;
+  }
+  .box-form .right-container {
+    width: 100%;
+    height: 50%;
+    overflow: scroll;
+  }
+  .box-form .left img {
+    width: auto;
+  }
+  .signup-naming .row {
+    width: 100%;
+  }
+  .footerdiv button {
+    padding: 5px 10px;
+  }
+  .postimageurl {
+    height: 50vh;
+  }
+  #frienduserprofileimg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .profileimage {
+    width: 60px;
+    height: 60px;
+  }
+  .userprodev {
+    display: flex;
+    align-items: center;
+  }
+  .userprodev div h5,
+  .userprodev div p {
+    margin-top: 0;
+    font-size: 13px;
+  }
+
+  .footerdiv button {
+    /* display: none; */
+    padding: 15px 30px;
+  }
+  .footerdiv button p {
+    display: none;
+    /* padding: 5px 10px; */
+  }
+
+  .friendsuserimg {
+    width: 40px;
+    height: 40px;
+  }
+  #friendsdropdown {
+    height: auto;
+  }
+  #submitbutton {
+    border: 1px solid #d0d6db;
+    background-color: white;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #submitbutton a {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .profileimage {
+    width: 50px;
+    height: 50px;
+  }
+  .userprodev div h5,
+  .userprodev div p {
+    margin-top: 0;
+    font-size: 10px;
+  }
+
+  .friendsusername {
+    font-size: 15px;
+  }
+
+  #friendsdata p {
+    font-size: 15px;
+  }
+  .createposttitle {
+    font-size: 16px;
+  }
+  .uploadingcontent #imageforpost {
+    font-size: 15px;
+  }
+  .createpost-container img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+}

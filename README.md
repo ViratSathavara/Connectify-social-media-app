@@ -1,1 +1,1 @@
-# Connectify-social-media-app
+# connectify-social-media-app

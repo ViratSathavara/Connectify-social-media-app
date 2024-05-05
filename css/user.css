@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+#subprofilecontainer {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+#mainprofilesdiv {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.mainsubprofilediv {
+  width: 100%;
+  min-height: 80vh;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+}
+#usercoverpicturediv {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.429);
+}
+#choosecoverimg {
+  display: flex;
+  justify-content: center;
+  right: 4px;
+  bottom: 35px;
+}
+
+.coversubsection {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.coversubsection h2 {
+  color: black;
+}
+#userprofilepicturediv h2 {
+  color: black;
+}
+#userprofilepicturediv {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#m {
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#usercoverimg {
+  border-radius: 20px;
+  border: 3px solid #000000bc;
+  box-shadow: 1px 1px 15px black;
+  max-width: 90%;
+  background-color: white;
+  object-fit: contain;
+}
+input {
+  outline: none;
+}
+.userprofile {
+  margin: 0px;
+}
+.profileimage {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  border-radius: 100px;
+}
+.inputfirst {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#a {
+  background-color: #f0f2f5;
+  width: 105%;
+  font-size: 15px;
+  height: 80%;
+  outline: none;
+  border: none;
+  margin: 0px;
+  padding: 15px;
+  padding-left: 20px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+.navpro {
+  background-color: #ffffff;
+  margin: 0px;
+  border-radius: 5px;
+  height: 50px;
+  padding: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profilepicture {
+  height: 35px;
+  width: 35px;
+  margin: 0px;
+}
+#userimg {
+  border-radius: 100px;
+}
+#userprofilepicturediv {
+  bottom: 0;
+  left: 10px;
+}
+#userprofileimg {
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: white;
+  border: 3px solid #000000bc;
+  box-shadow: 1px 1px 15px black;
+  height: 200px;
+  width: 200px;
+}
+#createpostdiv {
+  padding: 0px;
+}
+#chooseprofileimg {
+  bottom: 10px;
+  left: 90px;
+}
+#progressbardiv {
+  border-radius: 10px;
+  visibility: hidden;
+  margin-top: 3px;
+  margin-bottom: 4px;
+}
+#editabledatadiv {
+  margin: 0px;
+  height: 40vh;
+}
+
+#userprofileandpostsdiv {
+  padding: 0px 20px;
+}
+.usersdetailsbuttons {
+  color: blue;
+  width: 50%;
+  padding: 5px 23px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+#navpromain {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+}
+#editabledatadiv {
+  background-color: #e2e2e277;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  overflow: auto;
+  min-height: 40vh;
+  height: 60vh;
+}
+
+.subeditabledatadiv textarea::placeholder {
+  color: white;
+}
+.subeditabledatadiv textarea {
+  background-color: rgba(0, 0, 0, 0.356);
+  color: white;
+}
+.subeditabledatadiv {
+  width: 80%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #0000006f;
+  /* box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.449); */
+}
+#userprofilebutton {
+  background-color: blue;
+  color: white;
+}
+.labels {
+  color: white;
+  /* background-color: rgba(255, 255, 255, 0.356); */
+  font-size: 14px;
+  font-weight: 700;
+}
+.userdatainputs::placeholder {
+  color: white;
+}
+.userdatainputs {
+  margin: 10px 0px;
+  background-color: rgba(0, 0, 0, 0.356);
+  border: 1px solid #d4d9de;
+  color: white;
+  width: 100%;
+  outline: none;
+  height: 33px;
+  border-radius: 5px;
+  padding: 7px 10px;
+  font-size: 16px;
+}
+#userdescription {
+  resize: none;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid #d4d9de;
+  outline: none;
+  border-radius: 5px;
+}
+#updatedatabutton {
+  background-color: blue;
+  width: 40%;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  padding: 7px;
+}
+.usernameanddetailsdiv {
+  width: 65%;
+}
+.editanddeletbtn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+#showposts {
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(3, 3, 3, 0.553);
+
+  /* justify-content: center; */
+}
+#maincreate {
+  width: 80%;
+  margin-top: 30px;
+  overflow: auto;
+  display: none;
+}
+/* .commentmain > div {
+  width: 75%;
+} */
+#editabledatadiv::-webkit-scrollbar-track,
+#maincreate::-webkit-scrollbar-track,
+#showposts::-webkit-scrollbar-track {
+  border: 1px solid #cbcbcb;
+  background-color: #fffdfd;
+  border-radius: 10px;
+  box-shadow: rgb(203, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.updatebnt {
+  color: green;
+  min-height: 15px;
+  font-size: 15px;
+}
+#done {
+  color: green;
+  min-height: 15px;
+  font-size: 15px;
+  display: none;
+}
+.commentinput {
+  width: 85%;
+}
+.postmain {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgba(255, 255, 255, 0.827);
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#editabledatadiv::-webkit-scrollbar,
+#maincreate::-webkit-scrollbar,
+#showposts::-webkit-scrollbar {
+  width: 8px;
+  background-color: #ffffff;
+}
+
+#editabledatadiv::-webkit-scrollbar-thumb,
+#maincreate::-webkit-scrollbar-thumb,
+#showposts::-webkit-scrollbar-thumb {
+  background-color: #3360f8;
+  border-radius: 10px;
+}
+#userprofileandpostsdiv {
+  height: 10px;
+  background-color: white;
+}
+#currentuserpostsdiv {
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* min-height: 40vh; */
+  justify-content: center;
+  align-items: center;
+}
+/* #loud {
+  height: 100px;
+} */
+.postheader {
+  padding: 0px;
+}
+.postheader .descriptionp {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin: 10px 0;
+}
+.postheader .descriptionp p {
+  width: 94%;
+}
+.postsbtn {
+  color: blue;
+  cursor: pointer;
+  background-color: #fffefe;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#inputforuserprofileimg {
+  display: none;
+}
+#currentuserpostsdiv {
+  display: none;
+}
+#inputforusercoverimg {
+  /* display: flex; */
+  width: 0;
+  height: 0;
+}
+.progress {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 581px) {
+  .userdatainputs {
+    font-size: 4vw;
+  }
+}
+
+#userdiv {
+  width: 100%;
+}
+
+.mainuserdiv {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptionp p {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.footerdiv {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-around;
+}
+.footerdiv button {
+  padding: 0 10px;
+  border-radius: 10px;
+}
+
+.writecomment {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.writecomment .commentinput {
+  width: 100%;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.writecomment .sendbutton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 15px black;
+  box-sizing: content-box;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.commentprofileimage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.commentuserdetails {
+  width: 23%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.commentvalue {
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.postimageurl {
+  width: 200px;
+  height: 200px;
+}
+
+#uploadbuttonicon {
+  width: 60px;
+  height: 60px;
+}
+
+.uploadcontainer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #cbcbcb;
+  border-radius: 3px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.userdiv {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.userdiv h6 {
+  font-weight: 600;
+}
+.userprodiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#loaderdiv {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#submitbuttondiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+#updatepostbtn {
+  color: #000000;
+  border: 3px solid #00eaff;
+  background-image: -webkit-linear-gradient(
+    30deg,
+    #00eaff 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(30deg, #00eaff73 50%, transparent 50%);
+  padding: 5px 30px;
+  border-radius: 10px;
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  font-size: 27px;
+  -webkit-transition: background 200ms ease-in-out;
+  transition: background 200ms ease-in-out;
+  cursor: pointer;
+}
+
+#updatepostbtn:hover {
+  background-position: 100%;
+  color: #000000;
+}
+
+#postsbutton {
+  background-color: white;
+}
+
+.postimagediv {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.postimagediv img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.449);
+}
+
+.postVideo {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.449);
+}
+
+#usernameinprofile {
+  width: 50%;
+  box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.449);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+#usernameinprofile p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.names {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#topbtn {
+  display: flex;
+  justify-content: center;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.804);
+  color: white;
+  cursor: pointer;
+  align-self: center;
+  display: flex;
+
+  justify-content: center;
+  padding: 15px 17px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 860px) {
+  #usernameinprofile {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 710px) {
+  #mainprofilesdiv {
+    height: auto;
+  }
+  #usercoverpicturediv {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .coversubsection {
+    width: 100%;
+  }
+  #userprofilepicturediv {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 512px) {
+  #usernameinprofile h2,
+  #usernameinprofile p {
+    font-size: 16px;
+  }
+
+  .subeditabledatadiv{
+    width: 100%;
+  }
+  .postmain{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  #usernameinprofile h2,
+  #usernameinprofile p {
+    font-size: 12px;
+  }
+}
+
+
+.commentmain{
+  border: 1px solid #000000;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0 0 0/100%);
+  margin: 20px 0;
+}
